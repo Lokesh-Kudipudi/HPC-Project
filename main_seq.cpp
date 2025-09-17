@@ -136,7 +136,7 @@ public:
         }
         
         superpixelMap[x][y] = nearestId;
-        superpixels[nearestId]. .push_back(Point(y, x));
+        superpixels[nearestId].pixels.push_back(Point(y, x));
     }
     
     // Grow superpixel using region growing
@@ -375,8 +375,8 @@ public:
         }
         
         // Apply morphological operations to clean up the result
-        // Mat kernel = getStructuringElement(MORPH_ELLIPSE, Size(3, 3));
-        // morphologyEx(result, result, MORPH_CLOSE, kernel);
+        Mat kernel = getStructuringElement(MORPH_ELLIPSE, Size(3, 3));
+        morphologyEx(result, result, MORPH_CLOSE, kernel);
         
         return result;
     }
@@ -414,43 +414,16 @@ public:
                 return generateSegmentationResult(segmentMap);
             }
         }
-        
         // Fallback
         vector<int> segmentMap = segmentGraph(edges, 150.0);
         return generateSegmentationResult(segmentMap);
     }
     
-    // Get superpixel boundaries for visualization
-    Mat getSuperpixelBoundaries() {
-        Mat boundaries = Mat::zeros(rows, cols, CV_8UC1);
-        
-        for (int i = 1; i < rows - 1; i++) {
-            for (int j = 1; j < cols - 1; j++) {
-                int currentId = superpixelMap[i][j];
-                
-                // Check if this pixel is on a boundary
-                bool isBoundary = false;
-                for (int dx = -1; dx <= 1 && !isBoundary; dx++) {
-                    for (int dy = -1; dy <= 1 && !isBoundary; dy++) {
-                        if (dx == 0 && dy == 0) continue;
-                        if (superpixelMap[i + dx][j + dy] != currentId) {
-                            isBoundary = true;
-                        }
-                    }
-                }
-                
-                if (isBoundary) {
-                    boundaries.at<uchar>(i, j) = 255;
-                }
-            }
-        }
-        
-        return boundaries;
-    }
 };
 
 int main(int argc, char **argv) {
     try {
+
         // Load SAR image
         cout << "Loading SAR image..." << endl;
         Mat image = imread(argv[1], IMREAD_COLOR);
@@ -462,33 +435,24 @@ int main(int argc, char **argv) {
         
         cout << "Image loaded successfully. Size: " << image.cols << "x" << image.rows << endl;
         
-        // Make minSuperpixelSize adaptive to image size.
-        // For a 500x500 image, this is ~25. For a 100x100 image, this is 10.
-        // int minSize = max(10, (image.rows * image.cols) / 10000);
         // Create SAR segmentation object
         SARSegmentation segmenter(image, 0.015, 25);
-        // SARSegmentation segmenter(image, 0.015, minSize);
         
         // Perform segmentation
         Mat segmentationResult = segmenter.segment();
         
-        // Get superpixel boundaries
-        Mat boundaries = segmenter.getSuperpixelBoundaries();
         
         // Save results
         imwrite("sar_segmented.png", segmentationResult);
-        imwrite("sar_boundaries.png", boundaries);
         
         // Display results
         namedWindow("Original Image", WINDOW_AUTOSIZE);
         namedWindow("Segmentation Result", WINDOW_AUTOSIZE);
-        namedWindow("Superpixel Boundaries", WINDOW_AUTOSIZE);
-        
         imshow("Original Image", image);
         imshow("Segmentation Result", segmentationResult);
-        imshow("Superpixel Boundaries", boundaries);
+
         
-        cout << "Results saved as 'sar_segmented.png' and 'sar_boundaries.png'" << endl;
+        cout << "Results saved as 'sar_segmented.png'" << endl;
         cout << "Press any key to exit..." << endl;
         waitKey(0);
         
@@ -499,4 +463,3 @@ int main(int argc, char **argv) {
         return -1;
     }
 }
-
