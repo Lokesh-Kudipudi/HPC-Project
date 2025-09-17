@@ -6,6 +6,7 @@
 #include <set>
 #include <algorithm>
 #include <cmath>
+#include <chrono>
 
 using namespace cv;
 using namespace std;
@@ -44,10 +45,16 @@ private:
     // Superpixel-related variables
     vector<vector<int>> superpixelMap;
     vector<Superpixel> superpixels;
+
+    // Timing variables
+    double time_growSuperpixel;
+    double time_calculateSuperpixelProperties;
+    double time_assignToNearestSuperpixel;
     
 public:
     SARSegmentation(const Mat& img, double threshold = 0.015, int minSize = 10) 
-        : originalImage(img), intensityThreshold(threshold), minSuperpixelSize(minSize) {
+        : originalImage(img), intensityThreshold(threshold), minSuperpixelSize(minSize),
+          time_growSuperpixel(0.0), time_calculateSuperpixelProperties(0.0), time_assignToNearestSuperpixel(0.0) {
         
         originalImage.copyTo(image);
         rows = image.rows;
@@ -73,6 +80,8 @@ public:
     
     // Extract superpixels using improved region growing
     void extractSuperpixels() {
+        auto start_total = chrono::high_resolution_clock::now();
+
         cout << "Extracting superpixels..." << endl;
         
         int superpixelId = 0;
@@ -85,10 +94,18 @@ public:
             for (int j = stepSize/2; j < cols; j += stepSize) {
                 if (!visited[i][j]) {
                     Superpixel sp(superpixelId);
+
+                    auto start_grow = chrono::high_resolution_clock::now();
                     growSuperpixel(i, j, sp, visited);
+                    auto end_grow = chrono::high_resolution_clock::now();
+                    time_growSuperpixel += chrono::duration_cast<chrono::duration<double>>(end_grow - start_grow).count();
                     
                     if (sp.pixels.size() >= minSuperpixelSize) {
+                        auto start_calc = chrono::high_resolution_clock::now();
                         calculateSuperpixelProperties(sp);
+                        auto end_calc = chrono::high_resolution_clock::now();
+                        time_calculateSuperpixelProperties += chrono::duration_cast<chrono::duration<double>>(end_calc - start_calc).count();
+
                         superpixels.push_back(sp);
                         superpixelId++;
                     } else {
@@ -107,12 +124,22 @@ public:
             for (int j = 0; j < cols; j++) {
                 if (!visited[i][j]) {
                     // Assign to nearest superpixel
+                    auto start_assign = chrono::high_resolution_clock::now();
                     assignToNearestSuperpixel(i, j);
+                    auto end_assign = chrono::high_resolution_clock::now();
+                    time_assignToNearestSuperpixel += chrono::duration_cast<chrono::duration<double>>(end_assign - start_assign).count();
                 }
             }
         }
         
         cout << "Created " << superpixels.size() << " superpixels" << endl;
+
+        auto end_total = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsed_total = end_total - start_total;
+        cout << "Time taken by extractSuperpixels: " << elapsed_total.count() << " seconds" << endl;
+        cout << "  - Time in growSuperpixel: " << time_growSuperpixel << " seconds" << endl;
+        cout << "  - Time in calculateSuperpixelProperties: " << time_calculateSuperpixelProperties << " seconds" << endl;
+        cout << "  - Time in assignToNearestSuperpixel: " << time_assignToNearestSuperpixel << " seconds" << endl;
     }
     
     // Assign unprocessed pixel to nearest superpixel
@@ -201,6 +228,8 @@ public:
     
     // Build adjacency graph of superpixels
     vector<Edge> buildSuperpixelGraph() {
+        auto start = chrono::high_resolution_clock::now();
+
         cout << "Building superpixel graph..." << endl;
         
         vector<Edge> edges;
@@ -239,6 +268,11 @@ public:
         }
         
         cout << "Created graph with " << edges.size() << " edges" << endl;
+
+        auto end = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsed = end - start;
+        cout << "Time taken by buildSuperpixelGraph: " << elapsed.count() << " seconds" << endl;
+
         return edges;
     }
     
@@ -302,6 +336,8 @@ public:
     
     // Perform graph-based segmentation
     vector<int> segmentGraph(const vector<Edge>& edges, double k = 150.0) {
+        auto start = chrono::high_resolution_clock::now();
+
         cout << "Performing graph-based segmentation with k=" << k << endl;
         
         vector<Edge> sortedEdges = edges;
@@ -331,11 +367,17 @@ public:
         }
         
         cout << "Created " << segmentId << " segments" << endl;
+
+        auto end = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsed = end - start;
+        cout << "Time taken by segmentGraph: " << elapsed.count() << " seconds" << endl;
+
         return segmentMap;
     }
     
     // Generate segmentation result with better color scheme
     Mat generateSegmentationResult(const vector<int>& segmentMap) {
+        auto start = chrono::high_resolution_clock::now();
         cout << "Generating segmentation result..." << endl;
         
         int maxSegment = *max_element(segmentMap.begin(), segmentMap.end());
@@ -378,6 +420,10 @@ public:
         Mat kernel = getStructuringElement(MORPH_ELLIPSE, Size(3, 3));
         morphologyEx(result, result, MORPH_CLOSE, kernel);
         
+        auto end = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsed = end - start;
+        cout << "Time taken by generateSegmentationResult: " << elapsed.count() << " seconds" << endl;
+
         return result;
     }
     
