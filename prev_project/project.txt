@@ -1,0 +1,4 @@
+I am working a High Performance Computing Project, which involved using openMP, MPI and Cuda to optimize sequential programs.
+At Present I have a codebase of where Sentinel-1 SAR Images are Pre-Processed using openMP and Cuda. The Pre-Processing Steps include
+GrayScale, Rotate & Flip, Convert HSV, Brightness & Contrast Adjustment, Image Clipping, Wiener and Gauissian Filtering.
+Suggest me some application that can be done on top the existing codebase, it should be able to parallelize using openMP and Cuda.
