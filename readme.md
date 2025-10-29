@@ -42,28 +42,42 @@ The segmentation process consists of the following sequential steps:
 
 You can compile the program using a C++ compiler (like g++) and `pkg-config` to link against the necessary OpenCV libraries.
 
+### Sequencial Version ( Require's C++17 )
+
 ```bash
-g++ main_seq.cpp -o main_seq `pkg-config --cflags --libs opencv4`
+g++ main_seq.cpp -std=c++17 -o main_seq `pkg-config --cflags --libs opencv4`
+```
+
+### OpenMP Version on Windows
+
+```bash
+g++ -fopenmp main_omp.cpp -std=c++17 -o main_omp ⁠`pkg-config --cflags --libs opencv4`
+```
+
+### OpenMP Version on MacOS using Clang
+
+```bash
+g++ -std=c++17 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include `pkg-config --cflags --libs opencv4` main_omp.cpp -o main_omp -L/opt/homebrew/opt/libomp/lib -lomp
 ```
 
 ## Run Instructions
 
 ```bash
-./main_seq sample1.jpg
+./main_seq inputs/sample1.jpg
 ```
 
-# To create a profiling Report
+# To create a profiling Report on seq
 
 1. Compile the code with profiling enabled
 
 ```bash
-g++ -pg main_seq.cpp -o main_seq `pkg-config --cflags --libs opencv4`
+g++ -pg main_seq.cpp -std=c++17 -o main_seq `pkg-config --cflags --libs opencv4`
 ```
 
 2. Run the Program
 
 ```bash
-./main_seq sample1.jpg
+./main_seq inputs/sample1.jpg
 ```
 
 3. Run the gprof command
