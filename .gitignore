@@ -1,2 +1,5 @@
 main_omp
 main_seq
+.venv/
+__pycache__/
+Makefile_cuda

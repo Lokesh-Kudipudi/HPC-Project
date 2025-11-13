@@ -1,0 +1,266 @@
+,,,,,,,
+,,,,,,,
+,,Sample 1,Sample 2,Sample 3,Sample 4,Sample 5,Sample 6
+,Seq,"Image preprocessed. Size: 1280x819
+Created 2785 superpixels
+Time taken by extractSuperpixels: 23.5806 seconds
+  - Time in growSuperpixel: 0.118471 seconds
+  - Time in calculateSuperpixelProperties: 0.0114029 seconds
+  - Time in assignToNearestSuperpixel: 23.4053 seconds
+Created graph with 9248 edges
+Time taken by buildSuperpixelGraph: 0.242116 seconds
+Performing graph-based segmentation with k=50
+Created 69 segments
+Time taken by segmentGraph: 0.00184696 seconds
+Using k=50 with 69 segments
+Time taken by generateSegmentationResult: 0.00925133 seconds","Image preprocessed. Size: 1280x1280
+Created 2481 superpixels
+Time taken by extractSuperpixels: 7.72387 seconds
+  - Time in growSuperpixel: 0.221821 seconds
+  - Time in calculateSuperpixelProperties: 0.0267187 seconds
+  - Time in assignToNearestSuperpixel: 7.4351 seconds
+Created graph with 7216 edges
+Time taken by buildSuperpixelGraph: 0.38084 seconds
+Performing graph-based segmentation with k=50
+Created 286 segments
+Time taken by segmentGraph: 0.00157404 seconds
+Using k=50 with 286 segments
+Time taken by generateSegmentationResult: 0.0136854 seconds
+","Image preprocessed. Size: 1200x675
+Created 4158 superpixels
+Time taken by extractSuperpixels: 23.6644 seconds
+  - Time in growSuperpixel: 0.119428 seconds
+  - Time in calculateSuperpixelProperties: 0.00956989 seconds
+  - Time in assignToNearestSuperpixel: 23.5012 seconds
+Created graph with 15419 edges
+Time taken by buildSuperpixelGraph: 0.268285 seconds
+Performing graph-based segmentation with k=50
+Created 5 segments
+Time taken by segmentGraph: 0.00253217 seconds
+Using k=50 with 5 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00692042 seconds","Image preprocessed. Size: 1200x675
+Created 3232 superpixels
+Time taken by extractSuperpixels: 11.0706 seconds
+  - Time in growSuperpixel: 0.124814 seconds
+  - Time in calculateSuperpixelProperties: 0.0116748 seconds
+  - Time in assignToNearestSuperpixel: 10.9067 seconds
+Created graph with 11304 edges
+Time taken by buildSuperpixelGraph: 0.258595 seconds
+Performing graph-based segmentation with k=50
+Created 41 segments
+Time taken by segmentGraph: 0.00196371 seconds
+Using k=50 with 41 segments
+Time taken by generateSegmentationResult: 0.00697108 seconds","Image preprocessed. Size: 1200x618
+Created 2928 superpixels
+Time taken by extractSuperpixels: 24.0155 seconds
+  - Time in growSuperpixel: 0.0861321 seconds
+  - Time in calculateSuperpixelProperties: 0.00619736 seconds
+  - Time in assignToNearestSuperpixel: 23.8854 seconds
+Created graph with 10021 edges
+Time taken by buildSuperpixelGraph: 0.209674 seconds
+Performing graph-based segmentation with k=50
+Created 39 segments
+Time taken by segmentGraph: 0.00172367 seconds
+Using k=50 with 39 segments
+Time taken by generateSegmentationResult: 0.00630562 seconds","Image preprocessed. Size: 1280x822
+Created 3663 superpixels
+Time taken by extractSuperpixels: 14.1205 seconds
+  - Time in growSuperpixel: 0.15878 seconds
+  - Time in calculateSuperpixelProperties: 0.0159462 seconds
+  - Time in assignToNearestSuperpixel: 13.9124 seconds
+Created graph with 12849 edges
+Time taken by buildSuperpixelGraph: 0.311278 seconds
+Performing graph-based segmentation with k=50
+Created 58 segments
+Time taken by segmentGraph: 0.00240513 seconds
+Using k=50 with 58 segments
+Time taken by generateSegmentationResult: 0.00895021 seconds"
+,Parallel openMP( 10 threads ),"Image preprocessed. Size: 1280x819
+Created 2785 superpixels
+Time taken by extractSuperpixels: 5.8388 seconds
+  - Time in growSuperpixel: 0.128499 seconds
+  - Time in calculateSuperpixelProperties: 0.316395 seconds
+  - Time in assignToNearestSuperpixel: 5.37603 seconds
+Created graph with 9248 edges
+Time taken by buildSuperpixelGraph: 0.173306 seconds
+Performing graph-based segmentation with k=50
+Created 69 segments
+Time taken by segmentGraph: 0.00184683 seconds
+Using k=50 with 69 segments
+Time taken by generateSegmentationResult: 0.00279383 seconds
+","Image preprocessed. Size: 1280x1280
+Created 2481 superpixels
+Time taken by extractSuperpixels: 2.53213 seconds
+  - Time in growSuperpixel: 0.230081 seconds
+  - Time in calculateSuperpixelProperties: 0.270839 seconds
+  - Time in assignToNearestSuperpixel: 2.00713 seconds
+Created graph with 7216 edges
+Time taken by buildSuperpixelGraph: 0.475684 seconds
+Performing graph-based segmentation with k=50
+Created 286 segments
+Time taken by segmentGraph: 0.00215788 seconds
+Using k=50 with 286 segments
+Time taken by generateSegmentationResult: 0.00570492 seconds
+","Image preprocessed. Size: 1200x675
+Created 4158 superpixels
+Time taken by extractSuperpixels: 5.67233 seconds
+  - Time in growSuperpixel: 0.136567 seconds
+  - Time in calculateSuperpixelProperties: 0.464202 seconds
+  - Time in assignToNearestSuperpixel: 5.05586 seconds
+Created graph with 15419 edges
+Time taken by buildSuperpixelGraph: 0.450421 seconds
+Performing graph-based segmentation with k=50
+Created 5 segments
+Time taken by segmentGraph: 0.00257192 seconds
+Using k=50 with 5 segments
+Time taken by generateSegmentationResult: 0.00224075 seconds
+","Image preprocessed. Size: 1200x675
+Created 3232 superpixels
+Time taken by extractSuperpixels: 2.89114 seconds
+  - Time in growSuperpixel: 0.136942 seconds
+  - Time in calculateSuperpixelProperties: 0.353936 seconds
+  - Time in assignToNearestSuperpixel: 2.38599 seconds
+Created graph with 11304 edges
+Time taken by buildSuperpixelGraph: 0.49179 seconds
+Performing graph-based segmentation with k=50
+Created 41 segments
+Time taken by segmentGraph: 0.00202971 seconds
+Using k=50 with 41 segments
+Time taken by generateSegmentationResult: 0.00226283 seconds","Image preprocessed. Size: 1200x618
+Created 2928 superpixels
+Time taken by extractSuperpixels: 5.59368 seconds
+  - Time in growSuperpixel: 0.0963396 seconds
+  - Time in calculateSuperpixelProperties: 0.32522 seconds
+  - Time in assignToNearestSuperpixel: 5.158 seconds
+Created graph with 10021 edges
+Time taken by buildSuperpixelGraph: 0.284646 seconds
+Performing graph-based segmentation with k=50
+Created 39 segments
+Time taken by segmentGraph: 0.00173988 seconds
+Using k=50 with 39 segments
+Time taken by generateSegmentationResult: 0.00206592 seconds
+","Image preprocessed. Size: 1280x822
+Created 3663 superpixels
+Time taken by extractSuperpixels: 3.83243 seconds
+  - Time in growSuperpixel: 0.171264 seconds
+  - Time in calculateSuperpixelProperties: 0.412436 seconds
+  - Time in assignToNearestSuperpixel: 3.23067 seconds
+Created graph with 12849 edges
+Time taken by buildSuperpixelGraph: 0.432746 seconds
+Performing graph-based segmentation with k=50
+Created 58 segments
+Time taken by segmentGraph: 0.00243054 seconds
+Using k=50 with 58 segments
+Time taken by generateSegmentationResult: 0.00288321 seconds
+"
+,Cuda ( T4 - 7.5 ),"Image preprocessed. Size: 1280x819
+Created 2785 superpixels
+Time taken by extractSuperpixels: 1.3431 seconds
+  - Time in growSuperpixel: 0.555479 seconds
+  - Time in calculateSuperpixelProperties: 0.0249342 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.733689 seconds
+    * CUDA memcpy time: 0.181323 seconds
+    * CUDA kernel time: 0.444499 seconds
+Created graph with 9248 edges
+Time taken by buildSuperpixelGraph: 0.615719 seconds
+Performing graph-based segmentation with k=50
+Created 69 segments
+Time taken by segmentGraph: 0.00601653 seconds
+Using k=50 with 69 segments
+Time taken by generateSegmentationResult: 0.0183219 seconds","Image preprocessed. Size: 1280x1280
+Created 2481 superpixels
+Time taken by extractSuperpixels: 1.91221 seconds
+  - Time in growSuperpixel: 1.06082 seconds
+  - Time in calculateSuperpixelProperties: 0.0595642 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.74793 seconds
+    * CUDA memcpy time: 0.21901 seconds
+    * CUDA kernel time: 0.396516 seconds
+Created graph with 7216 edges
+Time taken by buildSuperpixelGraph: 0.985234 seconds
+Performing graph-based segmentation with k=50
+Created 286 segments
+Time taken by segmentGraph: 0.0047115 seconds
+Using k=50 with 286 segments
+Time taken by generateSegmentationResult: 0.0295641 seconds","Image preprocessed. Size: 1200x675
+Created 4158 superpixels
+Time taken by extractSuperpixels: 1.44356 seconds
+  - Time in growSuperpixel: 0.480568 seconds
+  - Time in calculateSuperpixelProperties: 0.0176057 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.918519 seconds
+    * CUDA memcpy time: 0.144839 seconds
+    * CUDA kernel time: 0.680539 seconds
+Created graph with 15419 edges
+Time taken by buildSuperpixelGraph: 0.751499 seconds
+Performing graph-based segmentation with k=50
+Created 5 segments
+Time taken by segmentGraph: 0.00861374 seconds
+Using k=50 with 5 segments
+Time taken by generateSegmentationResult: 0.0153324 seconds","Image preprocessed. Size: 1200x675
+Created 3232 superpixels
+Time taken by extractSuperpixels: 1.27119 seconds
+  - Time in growSuperpixel: 0.515872 seconds
+  - Time in calculateSuperpixelProperties: 0.021985 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.708878 seconds
+    * CUDA memcpy time: 0.143063 seconds
+    * CUDA kernel time: 0.484399 seconds
+Created graph with 11304 edges
+Time taken by buildSuperpixelGraph: 0.701938 seconds
+Performing graph-based segmentation with k=50
+Created 41 segments
+Time taken by segmentGraph: 0.00672449 seconds
+Using k=50 with 41 segments
+Time taken by generateSegmentationResult: 0.0161858 seconds","Image preprocessed. Size: 1200x618
+Created 2928 superpixels
+Time taken by extractSuperpixels: 1.05405 seconds
+  - Time in growSuperpixel: 0.348424 seconds
+  - Time in calculateSuperpixelProperties: 0.0117493 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.671384 seconds
+    * CUDA memcpy time: 0.137115 seconds
+    * CUDA kernel time: 0.436158 seconds
+Created graph with 10021 edges
+Time taken by buildSuperpixelGraph: 0.569661 seconds
+Performing graph-based segmentation with k=50
+Created 39 segments
+Time taken by segmentGraph: 0.0053938 seconds
+Using k=50 with 39 segments
+Time taken by generateSegmentationResult: 0.0135879 seconds","Image preprocessed. Size: 1280x822
+Created 3663 superpixels
+Time taken by extractSuperpixels: 1.57438 seconds
+  - Time in growSuperpixel: 0.682987 seconds
+  - Time in calculateSuperpixelProperties: 0.0334388 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.826672 seconds
+    * CUDA memcpy time: 0.17318 seconds
+    * CUDA kernel time: 0.556787 seconds
+Created graph with 12849 edges
+Time taken by buildSuperpixelGraph: 0.83444 seconds
+Performing graph-based segmentation with k=50
+Created 58 segments
+Time taken by segmentGraph: 0.00782064 seconds
+Using k=50 with 58 segments
+Time taken by generateSegmentationResult: 0.0188177 seconds"
+,Evaluation,"Segments detected: 24
+Calinski–Harabasz Score: 23054.8828
+Average Intra-class Variance: 0.017407
+Mean Inter-class Separation: 0.364546
+Segmentation Entropy: 1.3930","Segments detected: 30
+Calinski–Harabasz Score: 17112.0996
+Average Intra-class Variance: 0.010309
+Mean Inter-class Separation: 0.112619
+Segmentation Entropy: 3.5598","Segments detected: 5
+Calinski–Harabasz Score: 459.3365
+Average Intra-class Variance: 0.007619
+Mean Inter-class Separation: 0.087620
+Segmentation Entropy: 0.0966","Segments detected: 18
+Calinski–Harabasz Score: 2316.0903
+Average Intra-class Variance: 0.004766
+Mean Inter-class Separation: 0.114195
+Segmentation Entropy: 0.6669","Segments detected: 19
+Calinski–Harabasz Score: 3260.2427
+Average Intra-class Variance: 0.018352
+Mean Inter-class Separation: 0.182200
+Segmentation Entropy: 0.8134","Segments detected: 25
+Calinski–Harabasz Score: 11689.2061
+Average Intra-class Variance: 0.005589
+Mean Inter-class Separation: 0.051594
+Segmentation Entropy: 1.8434"

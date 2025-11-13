@@ -38,6 +38,15 @@ The segmentation process consists of the following sequential steps:
 
 - **OpenCV (4.x or later)**: Required for image I/O, filtering, and core data structures.
 
+## Testing Environment
+
+Macbook M4 Air - Sequential and OpenMP Version
+Tesla T4
+
+## Dataset Source
+
+[Synspective](https://synspective.com/gallery/)
+
 ## Build Instructions
 
 You can compile the program using a C++ compiler (like g++) and `pkg-config` to link against the necessary OpenCV libraries.
@@ -66,6 +75,10 @@ g++ -std=c++17 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include `pkg-c
 ./main_seq inputs/sample1.jpg
 ```
 
+```bash
+./main_omp inputs/sample1.jpg
+```
+
 # To create a profiling Report on seq
 
 1. Compile the code with profiling enabled
@@ -85,3 +98,46 @@ g++ -pg main_seq.cpp -std=c++17 -o main_seq `pkg-config --cflags --libs opencv4`
 ```bash
 gprof main_seq gmon.out > report_main_seq.txt
 ```
+
+## Evalution Metrics
+
+### Calinski–Harabasz Score (CH Score)
+
+What it is: \
+Measures how well clusters are separated and compact.
+
+Better range: \
+Higher is better. \
+(High CH = tight clusters + good separation.)
+
+### Intra-class Variance
+
+What it is: \
+Measures how spread out the data points are within each class/cluster.
+
+Better range: \
+Lower is better.
+(Low variance = compact, consistent clusters.)
+
+### Inter-class Separation (Distance Between Class Means)
+
+What it is: \
+Distance between the centers (means) of different classes/clusters.
+
+Better range: \
+Higher is better. \
+(Larger distance = better-separated classes.)
+
+### Entropy of the Segmented Image
+
+What it is: \
+Measures randomness/complexity in the segmented image.
+
+Better range: \
+Depends on context: \
+Low entropy → simpler, smoother segmentation. \
+High entropy → more detailed/complex segmentation.
+
+### Evalution Sheet
+
+(Google Sheet Link)[https://docs.google.com/spreadsheets/d/1SwYvWu2-6ZTNSZguZ7LxR_cQ_cC1RAzSuLoQ0ACM_14/edit?usp=sharing]

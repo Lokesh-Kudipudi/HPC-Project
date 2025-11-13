@@ -563,7 +563,7 @@ int main(int argc, char **argv)
         // Perform segmentation
         Mat segmentationResult = segmenter.segment();
 
-        fs::path p(path);
+        std::filesystem::path p(path);
         string inputName = p.stem().string();
 
         string outputName = "sar_segmented_" + inputName + ".png";
