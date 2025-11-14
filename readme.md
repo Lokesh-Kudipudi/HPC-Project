@@ -38,10 +38,10 @@ The segmentation process consists of the following sequential steps:
 
 - **OpenCV (4.x or later)**: Required for image I/O, filtering, and core data structures.
 
-## Testing Environment
+## Testing Environment for metrics table
 
-Macbook M4 Air - Sequential and OpenMP Version
-Tesla T4
+Macbook M4 Air - Sequential and OpenMP Version \
+Tesla T4 - CUDA
 
 ## Dataset Source
 
@@ -69,6 +69,12 @@ g++ -fopenmp main_omp.cpp -std=c++17 -o main_omp ⁠`pkg-config --cflags --libs 
 g++ -std=c++17 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include `pkg-config --cflags --libs opencv4` main_omp.cpp -o main_omp -L/opt/homebrew/opt/libomp/lib -lomp
 ```
 
+### CUDA
+
+```bash
+!nvcc -o main_cuda main_cuda.cu `pkg-config --cflags --libs opencv4` -std=c++17 -diag-suppress 611
+```
+
 ## Run Instructions
 
 ```bash
@@ -77,6 +83,10 @@ g++ -std=c++17 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include `pkg-c
 
 ```bash
 ./main_omp inputs/sample1.jpg
+```
+
+```bash
+./main_cuda inputs/sample1.jpg
 ```
 
 # To create a profiling Report on seq
