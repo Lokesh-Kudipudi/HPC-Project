@@ -1,0 +1,545 @@
+Loading SAR image...
+Image loaded successfully. Size: 1280x819
+Image preprocessed. Size: 1280x819
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(80,52) blocks(16,16)
+Created 2785 superpixels
+Time taken by extractSuperpixels: 1.28709 seconds
+  - Time in growSuperpixel: 0.532185 seconds
+  - Time in calculateSuperpixelProperties: 0.0244658 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.702551 seconds
+    * CUDA memcpy time: 0.186102 seconds
+    * CUDA kernel time: 0.410648 seconds
+Building superpixel graph...
+Created graph with 9248 edges
+Time taken by buildSuperpixelGraph: 0.612555 seconds
+Performing graph-based segmentation with k=50
+Created 69 segments
+Time taken by segmentGraph: 0.00559324 seconds
+Using k=50 with 69 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.017877 seconds
+Time taken for segmentation: 1.92441 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 1280x1280
+Image preprocessed. Size: 1280x1280
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(80,80) blocks(16,16)
+Created 2481 superpixels
+Time taken by extractSuperpixels: 1.87 seconds
+  - Time in growSuperpixel: 1.04459 seconds
+  - Time in calculateSuperpixelProperties: 0.0578023 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.724706 seconds
+    * CUDA memcpy time: 0.228881 seconds
+    * CUDA kernel time: 0.36634 seconds
+Building superpixel graph...
+Created graph with 7216 edges
+Time taken by buildSuperpixelGraph: 0.978653 seconds
+Performing graph-based segmentation with k=50
+
+Created 286 segments
+Time taken by segmentGraph: 0.00484019 seconds
+Using k=50 with 286 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0298381 seconds
+Time taken for segmentation: 2.88445 seconds
+Loading SAR image...
+Image loaded successfully. Size: 1200x675
+Image preprocessed. Size: 1200x675
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(75,43) blocks(16,16)
+Created 4158 superpixels
+Time taken by extractSuperpixels: 1.45301 seconds
+  - Time in growSuperpixel: 0.500811 seconds
+  - Time in calculateSuperpixelProperties: 0.0185739 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.905674 seconds
+    * CUDA memcpy time: 0.161341 seconds
+    * CUDA kernel time: 0.651976 seconds
+Building superpixel graph...
+Created graph with 15419 edges
+Time taken by buildSuperpixelGraph: 0.774843 seconds
+Performing graph-based segmentation with k=50
+Created 5 segments
+Time taken by segmentGraph: 0.00880073 seconds
+Using k=50 with 5 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0143654 seconds
+Time taken for segmentation: 2.25331 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 1200x675
+Image preprocessed. Size: 1200x675
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(75,43) blocks(16,16)
+Created 3232 superpixels
+Time taken by extractSuperpixels: 1.33749 seconds
+  - Time in growSuperpixel: 0.526512 seconds
+  - Time in calculateSuperpixelProperties: 0.0221249 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.763879 seconds
+    * CUDA memcpy time: 0.166417 seconds
+    * CUDA kernel time: 0.514385 seconds
+Building superpixel graph...
+Created graph with 11304 edges
+Time taken by buildSuperpixelGraph: 0.707607 seconds
+Performing graph-based segmentation with k=50
+Created 41 segments
+Time taken by segmentGraph: 0.00623541 seconds
+Using k=50 with 41 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0154432 seconds
+Time taken for segmentation: 2.0682 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 1200x618
+Image preprocessed. Size: 1200x618
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(75,39) blocks(16,16)
+Created 2928 superpixels
+Time taken by extractSuperpixels: 1.09839 seconds
+  - Time in growSuperpixel: 0.355106 seconds
+  - Time in calculateSuperpixelProperties: 0.0121621 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.70808 seconds
+    * CUDA memcpy time: 0.155392 seconds
+    * CUDA kernel time: 0.446152 seconds
+Building superpixel graph...
+Created graph with 10021 edges
+Time taken by buildSuperpixelGraph: 0.575763 seconds
+Performing graph-based segmentation with k=50
+Created 39 segments
+Time taken by segmentGraph: 0.00595343 seconds
+Using k=50 with 39 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0134557 seconds
+Time taken for segmentation: 1.69504 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 1280x822
+Image preprocessed. Size: 1280x822
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(80,52) blocks(16,16)
+Created 3663 superpixels
+Time taken by extractSuperpixels: 1.58183 seconds
+  - Time in growSuperpixel: 0.676445 seconds
+  - Time in calculateSuperpixelProperties: 0.0313307 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 0.844757 seconds
+    * CUDA memcpy time: 0.180297 seconds
+    * CUDA kernel time: 0.568708 seconds
+Building superpixel graph...
+Created graph with 12849 edges
+Time taken by buildSuperpixelGraph: 0.849048 seconds
+Performing graph-based segmentation with k=50
+Created 58 segments
+Time taken by segmentGraph: 0.00763216 seconds
+Using k=50 with 58 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0195144 seconds
+Time taken for segmentation: 2.45975 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 5533 superpixels
+Time taken by extractSuperpixels: 5.44485 seconds
+  - Time in growSuperpixel: 1.52454 seconds
+  - Time in calculateSuperpixelProperties: 0.0536102 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 3.77003 seconds
+    * CUDA memcpy time: 0.425942 seconds
+    * CUDA kernel time: 2.80734 seconds
+Building superpixel graph...
+Created graph with 21228 edges
+Time taken by buildSuperpixelGraph: 2.61109 seconds
+Performing graph-based segmentation with k=50
+Created 662 segments
+Time taken by segmentGraph: 0.0139206 seconds
+Using k=50 with 662 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0736532 seconds
+Time taken for segmentation: 8.14653 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1490
+Image preprocessed. Size: 2650x1490
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 16857 superpixels
+Time taken by extractSuperpixels: 13.0722 seconds
+  - Time in growSuperpixel: 1.68031 seconds
+  - Time in calculateSuperpixelProperties: 0.043677 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 11.2267 seconds
+    * CUDA memcpy time: 0.442061 seconds
+    * CUDA kernel time: 10.2008 seconds
+Building superpixel graph...
+Created graph with 64724 edges
+Time taken by buildSuperpixelGraph: 3.6052 seconds
+Performing graph-based segmentation with k=50
+Created 127 segments
+Time taken by segmentGraph: 0.0440102 seconds
+Using k=50 with 127 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0722703 seconds
+Time taken for segmentation: 16.8016 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 5533 superpixels
+Time taken by extractSuperpixels: 5.44836 seconds
+  - Time in growSuperpixel: 1.53 seconds
+  - Time in calculateSuperpixelProperties: 0.0542705 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 3.76663 seconds
+    * CUDA memcpy time: 0.415546 seconds
+    * CUDA kernel time: 2.78894 seconds
+Building superpixel graph...
+Created graph with 21228 edges
+Time taken by buildSuperpixelGraph: 2.64698 seconds
+Performing graph-based segmentation with k=50
+Created 662 segments
+Time taken by segmentGraph: 0.0140993 seconds
+Using k=50 with 662 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0723226 seconds
+Time taken for segmentation: 8.18471 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1490
+Image preprocessed. Size: 2650x1490
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 15155 superpixels
+Time taken by extractSuperpixels: 11.5341 seconds
+  - Time in growSuperpixel: 1.72492 seconds
+  - Time in calculateSuperpixelProperties: 0.0519559 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 9.64075 seconds
+    * CUDA memcpy time: 0.413209 seconds
+    * CUDA kernel time: 8.62762 seconds
+Building superpixel graph...
+Created graph with 54439 edges
+Time taken by buildSuperpixelGraph: 3.05754 seconds
+Performing graph-based segmentation with k=50
+Created 124 segments
+Time taken by segmentGraph: 0.035505 seconds
+Using k=50 with 124 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0724461 seconds
+Time taken for segmentation: 14.7067 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2651x1491
+Image preprocessed. Size: 2651x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 8058 superpixels
+Time taken by extractSuperpixels: 6.43686 seconds
+  - Time in growSuperpixel: 2.22791 seconds
+  - Time in calculateSuperpixelProperties: 0.113547 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 3.99547 seconds
+    * CUDA memcpy time: 0.408713 seconds
+    * CUDA kernel time: 3.1682 seconds
+Building superpixel graph...
+Created graph with 25241 edges
+Time taken by buildSuperpixelGraph: 2.88795 seconds
+Performing graph-based segmentation with k=50
+Created 551 segments
+Time taken by segmentGraph: 0.017252 seconds
+Using k=50 with 551 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.069173 seconds
+Time taken for segmentation: 9.41472 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2651x1491
+Image preprocessed. Size: 2651x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 16482 superpixels
+Time taken by extractSuperpixels: 11.7494 seconds
+  - Time in growSuperpixel: 2.02672 seconds
+  - Time in calculateSuperpixelProperties: 0.0730553 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 9.53171 seconds
+    * CUDA memcpy time: 0.414445 seconds
+    * CUDA kernel time: 8.62841 seconds
+Building superpixel graph...
+Created graph with 61092 edges
+Time taken by buildSuperpixelGraph: 3.35553 seconds
+Performing graph-based segmentation with k=50
+Created 189 segments
+Time taken by segmentGraph: 0.0389308 seconds
+Using k=50 with 189 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0708094 seconds
+Time taken for segmentation: 15.2226 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 12675 superpixels
+Time taken by extractSuperpixels: 8.09569 seconds
+  - Time in growSuperpixel: 2.47654 seconds
+  - Time in calculateSuperpixelProperties: 0.127212 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 5.3791 seconds
+    * CUDA memcpy time: 0.416204 seconds
+    * CUDA kernel time: 4.52583 seconds
+Building superpixel graph...
+Created graph with 41971 edges
+Time taken by buildSuperpixelGraph: 2.91158 seconds
+Performing graph-based segmentation with k=50
+Created 544 segments
+Time taken by segmentGraph: 0.0295798 seconds
+Using k=50 with 544 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0718483 seconds
+Time taken for segmentation: 11.1141 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 18065 superpixels
+Time taken by extractSuperpixels: 13.7869 seconds
+  - Time in growSuperpixel: 2.02508 seconds
+  - Time in calculateSuperpixelProperties: 0.0704539 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 11.5707 seconds
+    * CUDA memcpy time: 0.427269 seconds
+    * CUDA kernel time: 10.6345 seconds
+Building superpixel graph...
+Created graph with 69507 edges
+Time taken by buildSuperpixelGraph: 3.7137 seconds
+Performing graph-based segmentation with k=50
+Created 63 segments
+Time taken by segmentGraph: 0.0450359 seconds
+Using k=50 with 63 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0721739 seconds
+Time taken for segmentation: 17.6267 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,94) blocks(16,16)
+Created 8997 superpixels
+Time taken by extractSuperpixels: 7.20983 seconds
+  - Time in growSuperpixel: 1.521 seconds
+  - Time in calculateSuperpixelProperties: 0.0603143 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 5.53096 seconds
+    * CUDA memcpy time: 0.440414 seconds
+    * CUDA kernel time: 4.55191 seconds
+Building superpixel graph...
+Created graph with 29579 edges
+Time taken by buildSuperpixelGraph: 2.54649 seconds
+Performing graph-based segmentation with k=50
+Created 374 segments
+Time taken by segmentGraph: 0.0194056 seconds
+Using k=50 with 374 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0714594 seconds
+Time taken for segmentation: 9.85118 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2560x1611
+Image preprocessed. Size: 2560x1611
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(160,101) blocks(16,16)
+Created 11714 superpixels
+Time taken by extractSuperpixels: 7.81729 seconds
+  - Time in growSuperpixel: 2.622 seconds
+  - Time in calculateSuperpixelProperties: 0.178463 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 4.88698 seconds
+    * CUDA memcpy time: 0.422657 seconds
+    * CUDA kernel time: 4.12893 seconds
+Building superpixel graph...
+Created graph with 40490 edges
+Time taken by buildSuperpixelGraph: 2.85006 seconds
+Performing graph-based segmentation with k=50
+Created 336 segments
+Time taken by segmentGraph: 0.0270117 seconds
+Using k=50 with 336 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0726644 seconds
+Time taken for segmentation: 10.772 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2560x1440
+Image preprocessed. Size: 2560x1440
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(160,90) blocks(16,16)
+Created 14035 superpixels
+Time taken by extractSuperpixels: 9.29592 seconds
+  - Time in growSuperpixel: 2.12471 seconds
+  - Time in calculateSuperpixelProperties: 0.0918894 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 6.96959 seconds
+    * CUDA memcpy time: 0.394298 seconds
+    * CUDA kernel time: 6.16064 seconds
+Building superpixel graph...
+Created graph with 47469 edges
+Time taken by buildSuperpixelGraph: 3.10567 seconds
+Performing graph-based segmentation with k=50
+Created 906 segments
+Time taken by segmentGraph: 0.0331472 seconds
+Using k=50 with 906 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0653811 seconds
+Time taken for segmentation: 12.5065 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2560x1440
+Image preprocessed. Size: 2560x1440
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(160,90) blocks(16,16)
+Created 6443 superpixels
+Time taken by extractSuperpixels: 5.79578 seconds
+  - Time in growSuperpixel: 0.896928 seconds
+  - Time in calculateSuperpixelProperties: 0.0116046 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 4.79864 seconds
+    * CUDA memcpy time: 0.392306 seconds
+    * CUDA kernel time: 3.79558 seconds
+Building superpixel graph...
+Created graph with 23945 edges
+Time taken by buildSuperpixelGraph: 2.5074 seconds
+Performing graph-based segmentation with k=50
+Created 157 segments
+Time taken by segmentGraph: 0.0150875 seconds
+Using k=50 with 157 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0678664 seconds
+Time taken for segmentation: 8.3895 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2648x1533
+Image preprocessed. Size: 2648x1533
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(166,96) blocks(16,16)
+Created 13305 superpixels
+Time taken by extractSuperpixels: 8.97198 seconds
+  - Time in growSuperpixel: 2.45409 seconds
+  - Time in calculateSuperpixelProperties: 0.118654 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 6.28545 seconds
+    * CUDA memcpy time: 0.426563 seconds
+    * CUDA kernel time: 5.43466 seconds
+Building superpixel graph...
+Created graph with 43337 edges
+Time taken by buildSuperpixelGraph: 3.08059 seconds
+Performing graph-based segmentation with k=50
+Created 754 segments
+Time taken by segmentGraph: 0.0284154 seconds
+Using k=50 with 754 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0725785 seconds
+Time taken for segmentation: 12.1596 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 2561x1440
+Image preprocessed. Size: 2561x1440
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(161,90) blocks(16,16)
+Created 12300 superpixels
+Time taken by extractSuperpixels: 9.29668 seconds
+  - Time in growSuperpixel: 1.29057 seconds
+  - Time in calculateSuperpixelProperties: 0.0312954 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 7.87414 seconds
+    * CUDA memcpy time: 0.393444 seconds
+    * CUDA kernel time: 6.92801 seconds
+Building superpixel graph...
+Created graph with 43912 edges
+Time taken by buildSuperpixelGraph: 2.72604 seconds
+Performing graph-based segmentation with k=50
+Created 140 segments
+Time taken by segmentGraph: 0.02777 seconds
+Using k=50 with 140 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0651328 seconds
+Time taken for segmentation: 12.121 seconds
+
+Loading SAR image...
+Image loaded successfully. Size: 1920x1920
+Image preprocessed. Size: 1920x1920
+CUDA Device: Tesla T4
+Compute Capability: 7.5
+Starting SAR image segmentation with CUDA...
+Extracting superpixels...
+Launching CUDA kernel with grid(120,120) blocks(16,16)
+Created 17666 superpixels
+Time taken by extractSuperpixels: 10.9834 seconds
+  - Time in growSuperpixel: 2.23886 seconds
+  - Time in calculateSuperpixelProperties: 0.0919045 seconds
+  - Time in assignToNearestSuperpixel (CUDA): 8.53914 seconds
+    * CUDA memcpy time: 0.413555 seconds
+    * CUDA kernel time: 7.73537 seconds
+Building superpixel graph...
+Created graph with 61674 edges
+Time taken by buildSuperpixelGraph: 3.29123 seconds
+Performing graph-based segmentation with k=50
+Created 242 segments
+Time taken by segmentGraph: 0.0405869 seconds
+Using k=50 with 242 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0680258 seconds
+Time taken for segmentation: 14.3909 seconds

@@ -1,0 +1,231 @@
+Processing inputs/sample1.jpg
+----- Segmentation Evaluation -----
+Segments detected: 24
+Calinski–Harabasz Score: 23054.8867
+Average Intra-class Variance: 0.017388
+Mean Inter-class Separation: 0.364976
+Segmentation Entropy: 1.3931
+-----------------------------------
+
+
+
+Processing inputs/sample2.jpg
+----- Segmentation Evaluation -----
+Segments detected: 30
+Calinski–Harabasz Score: 17112.0996
+Average Intra-class Variance: 0.010309
+Mean Inter-class Separation: 0.112619
+Segmentation Entropy: 3.5598
+-----------------------------------
+
+
+
+Processing inputs/sample3.jpg
+----- Segmentation Evaluation -----
+Segments detected: 5
+Calinski–Harabasz Score: 459.3365
+Average Intra-class Variance: 0.007619
+Mean Inter-class Separation: 0.087620
+Segmentation Entropy: 0.0966
+-----------------------------------
+
+
+
+Processing inputs/sample4.jpg
+----- Segmentation Evaluation -----
+Segments detected: 18
+Calinski–Harabasz Score: 2316.0903
+Average Intra-class Variance: 0.004766
+Mean Inter-class Separation: 0.114195
+Segmentation Entropy: 0.6669
+-----------------------------------
+
+
+
+Processing inputs/sample5.jpg
+----- Segmentation Evaluation -----
+Segments detected: 19
+Calinski–Harabasz Score: 3260.2427
+Average Intra-class Variance: 0.018352
+Mean Inter-class Separation: 0.182200
+Segmentation Entropy: 0.8134
+-----------------------------------
+
+
+
+Processing inputs/sample6.jpg
+----- Segmentation Evaluation -----
+Segments detected: 25
+Calinski–Harabasz Score: 11689.2061
+Average Intra-class Variance: 0.005589
+Mean Inter-class Separation: 0.051594
+Segmentation Entropy: 1.8434
+-----------------------------------
+
+
+
+Processing inputs/sample7.jpg
+----- Segmentation Evaluation -----
+Segments detected: 181
+Calinski–Harabasz Score: 14527.5693
+Average Intra-class Variance: 0.033263
+Mean Inter-class Separation: 0.203099
+Segmentation Entropy: 3.9000
+-----------------------------------
+
+
+
+Processing inputs/sample8.jpg
+----- Segmentation Evaluation -----
+Segments detected: 84
+Calinski–Harabasz Score: 3074.2046
+Average Intra-class Variance: 0.025919
+Mean Inter-class Separation: 0.256979
+Segmentation Entropy: 0.5541
+-----------------------------------
+
+
+
+Processing inputs/sample9.jpg
+----- Segmentation Evaluation -----
+Segments detected: 181
+Calinski–Harabasz Score: 14527.5693
+Average Intra-class Variance: 0.033263
+Mean Inter-class Separation: 0.203099
+Segmentation Entropy: 3.9000
+-----------------------------------
+
+
+
+Processing inputs/sample10.jpg
+----- Segmentation Evaluation -----
+Segments detected: 68
+Calinski–Harabasz Score: 9519.9707
+Average Intra-class Variance: 0.037400
+Mean Inter-class Separation: 0.289553
+Segmentation Entropy: 0.8123
+-----------------------------------
+
+
+
+Processing inputs/sample11.jpg
+----- Segmentation Evaluation -----
+Segments detected: 83
+Calinski–Harabasz Score: 18381.0840
+Average Intra-class Variance: 0.032303
+Mean Inter-class Separation: 0.339889
+Segmentation Entropy: 2.4104
+-----------------------------------
+
+
+
+Processing inputs/sample12.jpg
+----- Segmentation Evaluation -----
+Segments detected: 76
+Calinski–Harabasz Score: 17491.6094
+Average Intra-class Variance: 0.027597
+Mean Inter-class Separation: 0.318972
+Segmentation Entropy: 1.2580
+-----------------------------------
+
+
+
+Processing inputs/sample13.jpg
+----- Segmentation Evaluation -----
+Segments detected: 46
+Calinski–Harabasz Score: 39492.9727
+Average Intra-class Variance: 0.018586
+Mean Inter-class Separation: 0.263010
+Segmentation Entropy: 2.8458
+-----------------------------------
+
+
+
+Processing inputs/sample14.jpg
+----- Segmentation Evaluation -----
+Segments detected: 53
+Calinski–Harabasz Score: 4779.4673
+Average Intra-class Variance: 0.025240
+Mean Inter-class Separation: 0.286065
+Segmentation Entropy: 0.3184
+-----------------------------------
+
+
+
+Processing inputs/sample15.jpg
+----- Segmentation Evaluation -----
+Segments detected: 62
+Calinski–Harabasz Score: 24756.4648
+Average Intra-class Variance: 0.044154
+Mean Inter-class Separation: 0.298509
+Segmentation Entropy: 1.6946
+-----------------------------------
+
+
+
+Processing inputs/sample16.jpg
+----- Segmentation Evaluation -----
+Segments detected: 23
+Calinski–Harabasz Score: 130883.1797
+Average Intra-class Variance: 0.010440
+Mean Inter-class Separation: 0.299031
+Segmentation Entropy: 1.3975
+-----------------------------------
+
+
+
+Processing inputs/sample17.jpg
+----- Segmentation Evaluation -----
+Segments detected: 47
+Calinski–Harabasz Score: 41669.0508
+Average Intra-class Variance: 0.026232
+Mean Inter-class Separation: 0.318056
+Segmentation Entropy: 2.0971
+-----------------------------------
+
+
+
+Processing inputs/sample18.jpg
+----- Segmentation Evaluation -----
+Segments detected: 79
+Calinski–Harabasz Score: 3604.0273
+Average Intra-class Variance: 0.042390
+Mean Inter-class Separation: 0.178810
+Segmentation Entropy: 1.1127
+-----------------------------------
+
+
+
+Processing inputs/sample19.jpg
+----- Segmentation Evaluation -----
+Segments detected: 57
+Calinski–Harabasz Score: 22994.2031
+Average Intra-class Variance: 0.034736
+Mean Inter-class Separation: 0.349442
+Segmentation Entropy: 1.6438
+-----------------------------------
+
+
+
+Processing inputs/sample20.jpg
+----- Segmentation Evaluation -----
+Segments detected: 84
+Calinski–Harabasz Score: 4717.5264
+Average Intra-class Variance: 0.032565
+Mean Inter-class Separation: 0.204919
+Segmentation Entropy: 0.9126
+-----------------------------------
+
+
+
+Processing inputs/sample21.jpg
+----- Segmentation Evaluation -----
+Segments detected: 59
+Calinski–Harabasz Score: 19399.8223
+Average Intra-class Variance: 0.018196
+Mean Inter-class Separation: 0.290850
+Segmentation Entropy: 0.9602
+-----------------------------------
+
+
+
