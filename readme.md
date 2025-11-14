@@ -113,40 +113,52 @@ gprof main_seq gmon.out > report_main_seq.txt
 
 ### Calinski–Harabasz Score (CH Score)
 
-What it is: \
-Measures how well clusters are separated and compact.
+**What it is:** \
+The Calinski-Harabasz Score, also known as the Variance Ratio Criterion, measures the quality of clustering by evaluating how well-defined the clusters are. It compares the between-cluster dispersion (how far apart different clusters are) to the within-cluster dispersion (how compact each cluster is internally). The score is calculated as the ratio of the sum of between-cluster dispersion to within-cluster dispersion, multiplied by a factor that accounts for the number of clusters and data points.
 
-Better range: \
-Higher is better. \
-(High CH = tight clusters + good separation.)
+**Better range:** \
+Higher is better. A higher CH score indicates that clusters are well-separated from each other and internally compact, which is desirable for good segmentation quality. Typically, values above 100 indicate reasonable clustering, though this can vary depending on the dataset and number of clusters.
+
+**Interpretation:** \
+High CH score = tight, compact clusters with good separation between different segments. \
+Low CH score = overlapping or poorly defined clusters.
 
 ### Intra-class Variance
 
-What it is: \
-Measures how spread out the data points are within each class/cluster.
+**What it is:** \
+Intra-class variance measures the average spread or dispersion of pixel intensities within each segmented region. It quantifies how homogeneous each cluster is by calculating the variance of pixel values from the cluster mean. Lower variance indicates that pixels within the same segment have similar characteristics, which is a hallmark of good segmentation where similar pixels are grouped together.
 
-Better range: \
-Lower is better.
-(Low variance = compact, consistent clusters.)
+**Better range:** \
+Lower is better. Low intra-class variance indicates that pixels within each segment are very similar to each other, suggesting that the segmentation algorithm has successfully grouped homogeneous regions. This is particularly important for SAR image segmentation where we want to identify uniform areas.
+
+**Interpretation:** \
+Low variance = compact, consistent, and homogeneous clusters. \
+High variance = heterogeneous clusters with diverse pixel values.
 
 ### Inter-class Separation (Distance Between Class Means)
 
-What it is: \
-Distance between the centers (means) of different classes/clusters.
+**What it is:** \
+Inter-class separation measures the average distance between the centroids (mean intensity values) of different segmented regions. It provides insight into how distinct different segments are from each other. A larger distance indicates that the algorithm has successfully identified regions with different characteristics and avoided merging dissimilar areas. This metric is computed as the average Euclidean distance between all pairs of cluster centroids.
 
-Better range: \
-Higher is better. \
-(Larger distance = better-separated classes.)
+**Better range:** \
+Higher is better. Larger inter-class separation means that different segments have distinct characteristics, making them easily distinguishable from one another. This indicates that the segmentation has successfully partitioned the image into meaningful, non-overlapping regions.
+
+**Interpretation:** \
+Large distance = well-separated, distinct classes with different properties. \
+Small distance = similar or overlapping classes that may not be well distinguished.
 
 ### Entropy of the Segmented Image
 
-What it is: \
-Measures randomness/complexity in the segmented image.
+**What it is:** \
+Entropy measures the randomness, complexity, or information content in the segmented image. It is calculated based on the histogram of pixel intensity values in the output segmentation. Higher entropy indicates more variation and complexity in the segmentation, while lower entropy suggests a simpler, more uniform result with fewer distinct intensity levels. This metric helps evaluate the level of detail preserved or the smoothness achieved by the segmentation.
 
-Better range: \
-Depends on context: \
-Low entropy → simpler, smoother segmentation. \
-High entropy → more detailed/complex segmentation.
+**Better range:** \
+Context-dependent: \
+**Low entropy** → simpler, smoother segmentation with fewer distinct regions (useful for coarse-grained segmentation or when reducing noise). \
+**High entropy** → more detailed, complex segmentation with many distinct regions (useful for preserving fine details and textures in SAR images).
+
+**Interpretation:** \
+For SAR images, moderate entropy often indicates a good balance between noise reduction and detail preservation. Very low entropy might suggest over-smoothing, while very high entropy could indicate under-segmentation or insufficient noise reduction.
 
 ### Evalution Sheet
 
