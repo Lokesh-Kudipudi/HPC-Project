@@ -379,13 +379,6 @@ public:
         vector<Edge> edges;
         set<pair<int, int>> addedEdges;
 
-/* OPENMP DIRECTIVE 4: Parallel region with critical section for edge insertion
- * - collapse(2): Combines nested loops (rows x cols) for better load balancing
- * - Critical section protects shared 'edges' vector and 'addedEdges' set
- * - Most work (neighbor checking) is done in parallel
- * - Only edge insertion is serialized (happens only at superpixel boundaries)
- */
-#pragma omp parallel for collapse(2)
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < cols; j++)
@@ -406,25 +399,16 @@ public:
                         if (neighborId != -1 && currentId != neighborId)
                         {
                             pair<int, int> edgeKey = {min(currentId, neighborId), max(currentId, neighborId)};
-
-/* CRITICAL SECTION: Protects shared data structures
- * - Only one thread can execute this block at a time
- * - Prevents race conditions during edge insertion
- * - Critical rather than atomic because we need complex check-and-insert
- */
-#pragma omp critical
+                            if (addedEdges.find(edgeKey) == addedEdges.end())
                             {
-                                if (addedEdges.find(edgeKey) == addedEdges.end())
-                                {
-                                    // Enhanced edge weight calculation
-                                    double intensityDiff = abs(superpixels[currentId].meanIntensity -
-                                                               superpixels[neighborId].meanIntensity);
-                                    double varianceSum = superpixels[currentId].variance + superpixels[neighborId].variance;
-                                    double weight = intensityDiff * (1.0 + varianceSum * 10.0);
+                                // Enhanced edge weight calculation
+                                double intensityDiff = abs(superpixels[currentId].meanIntensity -
+                                                           superpixels[neighborId].meanIntensity);
+                                double varianceSum = superpixels[currentId].variance + superpixels[neighborId].variance;
+                                double weight = intensityDiff * (1.0 + varianceSum * 10.0);
 
-                                    edges.push_back(Edge(currentId, neighborId, weight));
-                                    addedEdges.insert(edgeKey);
-                                }
+                                edges.push_back(Edge(currentId, neighborId, weight));
+                                addedEdges.insert(edgeKey);
                             }
                         }
                     }
@@ -624,8 +608,11 @@ int main(int argc, char **argv)
         SARSegmentation segmenter(image, 0.015, 25);
 
         // Perform segmentation
+        // Log Time
+        auto startTotal = chrono::high_resolution_clock::now();
         Mat segmentationResult = segmenter.segment();
-
+        auto endTotal = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsedTotal = endTotal - startTotal;
         std::filesystem::path p(path);
         string inputName = p.stem().string();
 
@@ -634,14 +621,8 @@ int main(int argc, char **argv)
         imwrite(outputName, segmentationResult);
 
         // Display results
-        namedWindow("Original Image", WINDOW_AUTOSIZE);
-        namedWindow("Segmentation Result", WINDOW_AUTOSIZE);
-        imshow("Original Image", image);
-        imshow("Segmentation Result", segmentationResult);
-
-        cout << "Results saved as 'sar_segmented_openmp.png'" << endl;
-        cout << "Press any key to exit..." << endl;
-        waitKey(0);
+        cout << "Results saved as 'sar_segmented_omp_" << inputName << ".png'" << endl;
+        cout << "Time taken for segmentation: " << elapsedTotal.count() << " seconds" << endl;
 
         return 0;
     }

@@ -561,7 +561,10 @@ int main(int argc, char **argv)
         SARSegmentation segmenter(image, 0.015, 25);
 
         // Perform segmentation
+        auto startTotal = chrono::high_resolution_clock::now();
         Mat segmentationResult = segmenter.segment();
+        auto endTotal = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsedTotal = endTotal - startTotal;
 
         std::filesystem::path p(path);
         string inputName = p.stem().string();
@@ -571,15 +574,8 @@ int main(int argc, char **argv)
         imwrite(outputName, segmentationResult);
 
         // Display results
-        namedWindow("Original Image", WINDOW_AUTOSIZE);
-        namedWindow("Segmentation Result", WINDOW_AUTOSIZE);
-        imshow("Original Image", image);
-        imshow("Segmentation Result", segmentationResult);
-
         cout << "Results saved as " << outputName << endl;
-        cout << "Press any key to exit..." << endl;
-        waitKey(0);
-
+        cout << "Time taken for segmentation: " << elapsedTotal.count() << " seconds" << endl;
         return 0;
     }
     catch (const exception &e)

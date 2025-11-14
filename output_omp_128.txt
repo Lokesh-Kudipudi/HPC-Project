@@ -1,0 +1,572 @@
+Running with 128 threads
+
+
+Processing inputs/sample1.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1280x819
+Image preprocessed. Size: 1280x819
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 2785 superpixels
+Time taken by extractSuperpixels: 11.4896 seconds
+  - Time in growSuperpixel: 0.139228 seconds
+  - Time in calculateSuperpixelProperties: 4.25454 seconds
+  - Time in assignToNearestSuperpixel: 7.07534 seconds
+Building superpixel graph...
+Created graph with 9248 edges
+Time taken by buildSuperpixelGraph: 0.351106 seconds
+Performing graph-based segmentation with k=50
+Created 69 segments
+Time taken by segmentGraph: 0.00237296 seconds
+Using k=50 with 69 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00319988 seconds
+Results saved as 'sar_segmented_omp_sample1.png'
+Time taken for segmentation: 11.8523 seconds
+
+
+
+Processing inputs/sample10.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1490
+Image preprocessed. Size: 2650x1490
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 15155 superpixels
+Time taken by extractSuperpixels: 252.532 seconds
+  - Time in growSuperpixel: 0.499464 seconds
+  - Time in calculateSuperpixelProperties: 23.7148 seconds
+  - Time in assignToNearestSuperpixel: 228.234 seconds
+Building superpixel graph...
+Created graph with 54439 edges
+Time taken by buildSuperpixelGraph: 1.20993 seconds
+Performing graph-based segmentation with k=50
+Created 124 segments
+Time taken by segmentGraph: 0.0110072 seconds
+Using k=50 with 124 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0099225 seconds
+Results saved as 'sar_segmented_omp_sample10.png'
+Time taken for segmentation: 253.797 seconds
+
+
+
+Processing inputs/sample11.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2651x1491
+Image preprocessed. Size: 2651x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 8058 superpixels
+Time taken by extractSuperpixels: 69.5587 seconds
+  - Time in growSuperpixel: 0.567319 seconds
+  - Time in calculateSuperpixelProperties: 12.6903 seconds
+  - Time in assignToNearestSuperpixel: 56.2365 seconds
+Building superpixel graph...
+Created graph with 25241 edges
+Time taken by buildSuperpixelGraph: 1.20717 seconds
+Performing graph-based segmentation with k=50
+Created 551 segments
+Time taken by segmentGraph: 0.00549342 seconds
+Using k=50 with 551 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00978087 seconds
+Results saved as 'sar_segmented_omp_sample11.png'
+Time taken for segmentation: 70.7971 seconds
+
+
+
+Processing inputs/sample12.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2651x1491
+Image preprocessed. Size: 2651x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 16482 superpixels
+Time taken by extractSuperpixels: 210.182 seconds
+  - Time in growSuperpixel: 0.591812 seconds
+  - Time in calculateSuperpixelProperties: 25.7992 seconds
+  - Time in assignToNearestSuperpixel: 183.713 seconds
+Building superpixel graph...
+Created graph with 61092 edges
+Time taken by buildSuperpixelGraph: 1.28341 seconds
+Performing graph-based segmentation with k=50
+Created 189 segments
+Time taken by segmentGraph: 0.0117179 seconds
+Using k=50 with 189 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00894429 seconds
+Results saved as 'sar_segmented_omp_sample12.png'
+Time taken for segmentation: 211.517 seconds
+
+
+
+Processing inputs/sample13.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 12675 superpixels
+Time taken by extractSuperpixels: 82.1617 seconds
+  - Time in growSuperpixel: 0.66487 seconds
+  - Time in calculateSuperpixelProperties: 20.5277 seconds
+  - Time in assignToNearestSuperpixel: 60.8991 seconds
+Building superpixel graph...
+Created graph with 41971 edges
+Time taken by buildSuperpixelGraph: 1.14839 seconds
+Performing graph-based segmentation with k=50
+Created 544 segments
+Time taken by segmentGraph: 0.00906896 seconds
+Using k=50 with 544 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00873738 seconds
+Results saved as 'sar_segmented_omp_sample13.png'
+Time taken for segmentation: 83.3463 seconds
+
+
+
+Processing inputs/sample14.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 18065 superpixels
+Time taken by extractSuperpixels: 234.389 seconds
+  - Time in growSuperpixel: 0.592956 seconds
+  - Time in calculateSuperpixelProperties: 27.9575 seconds
+  - Time in assignToNearestSuperpixel: 205.76 seconds
+Building superpixel graph...
+Created graph with 69507 edges
+Time taken by buildSuperpixelGraph: 1.32728 seconds
+Performing graph-based segmentation with k=50
+Created 63 segments
+Time taken by segmentGraph: 0.0133033 seconds
+Using k=50 with 63 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.008816 seconds
+Results saved as 'sar_segmented_omp_sample14.png'
+Time taken for segmentation: 235.766 seconds
+
+
+
+Processing inputs/sample15.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 8997 superpixels
+Time taken by extractSuperpixels: 139.036 seconds
+  - Time in growSuperpixel: 0.407716 seconds
+  - Time in calculateSuperpixelProperties: 13.7314 seconds
+  - Time in assignToNearestSuperpixel: 124.826 seconds
+Building superpixel graph...
+Created graph with 29579 edges
+Time taken by buildSuperpixelGraph: 1.05151 seconds
+Performing graph-based segmentation with k=50
+Created 374 segments
+Time taken by segmentGraph: 0.00608033 seconds
+Using k=50 with 374 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0089055 seconds
+Results saved as 'sar_segmented_omp_sample15.png'
+Time taken for segmentation: 140.124 seconds
+
+
+
+Processing inputs/sample16.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2560x1611
+Image preprocessed. Size: 2560x1611
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 11714 superpixels
+Time taken by extractSuperpixels: 72.1504 seconds
+  - Time in growSuperpixel: 0.620671 seconds
+  - Time in calculateSuperpixelProperties: 18.0251 seconds
+  - Time in assignToNearestSuperpixel: 53.4354 seconds
+Building superpixel graph...
+Created graph with 40490 edges
+Time taken by buildSuperpixelGraph: 1.10365 seconds
+Performing graph-based segmentation with k=50
+Created 336 segments
+Time taken by segmentGraph: 0.00784408 seconds
+Using k=50 with 336 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00911238 seconds
+Results saved as 'sar_segmented_omp_sample16.png'
+Time taken for segmentation: 73.2857 seconds
+
+
+
+Processing inputs/sample17.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2560x1440
+Image preprocessed. Size: 2560x1440
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 14035 superpixels
+Time taken by extractSuperpixels: 117.472 seconds
+  - Time in growSuperpixel: 0.563509 seconds
+  - Time in calculateSuperpixelProperties: 21.5726 seconds
+  - Time in assignToNearestSuperpixel: 95.2693 seconds
+Building superpixel graph...
+Created graph with 47469 edges
+Time taken by buildSuperpixelGraph: 1.15781 seconds
+Performing graph-based segmentation with k=50
+Created 906 segments
+Time taken by segmentGraph: 0.00988704 seconds
+Using k=50 with 906 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00818213 seconds
+Results saved as 'sar_segmented_omp_sample17.png'
+Time taken for segmentation: 118.669 seconds
+
+
+
+Processing inputs/sample18.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2560x1440
+Image preprocessed. Size: 2560x1440
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 6443 superpixels
+Time taken by extractSuperpixels: 133.07 seconds
+  - Time in growSuperpixel: 0.271763 seconds
+  - Time in calculateSuperpixelProperties: 9.99513 seconds
+  - Time in assignToNearestSuperpixel: 122.732 seconds
+Building superpixel graph...
+Created graph with 23945 edges
+Time taken by buildSuperpixelGraph: 1.01949 seconds
+Performing graph-based segmentation with k=50
+Created 157 segments
+Time taken by segmentGraph: 0.00442604 seconds
+Using k=50 with 157 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00827167 seconds
+Results saved as 'sar_segmented_omp_sample18.png'
+Time taken for segmentation: 134.124 seconds
+
+
+
+Processing inputs/sample19.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2648x1533
+Image preprocessed. Size: 2648x1533
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 13305 superpixels
+Time taken by extractSuperpixels: 102.451 seconds
+  - Time in growSuperpixel: 0.670495 seconds
+  - Time in calculateSuperpixelProperties: 20.9754 seconds
+  - Time in assignToNearestSuperpixel: 80.7325 seconds
+Building superpixel graph...
+Created graph with 43337 edges
+Time taken by buildSuperpixelGraph: 1.17394 seconds
+Performing graph-based segmentation with k=50
+Created 754 segments
+Time taken by segmentGraph: 0.00882671 seconds
+Using k=50 with 754 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00948442 seconds
+Results saved as 'sar_segmented_omp_sample19.png'
+Time taken for segmentation: 103.661 seconds
+
+
+
+Processing inputs/sample2.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1280x1280
+Image preprocessed. Size: 1280x1280
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 2481 superpixels
+Time taken by extractSuperpixels: 6.10143 seconds
+  - Time in growSuperpixel: 0.240754 seconds
+  - Time in calculateSuperpixelProperties: 3.80472 seconds
+  - Time in assignToNearestSuperpixel: 2.03119 seconds
+Building superpixel graph...
+Created graph with 7216 edges
+Time taken by buildSuperpixelGraph: 0.545161 seconds
+Performing graph-based segmentation with k=50
+Created 286 segments
+Time taken by segmentGraph: 0.00182479 seconds
+Using k=50 with 286 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00375008 seconds
+Results saved as 'sar_segmented_omp_sample2.png'
+Time taken for segmentation: 6.65774 seconds
+
+
+
+Processing inputs/sample20.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2561x1440
+Image preprocessed. Size: 2561x1440
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 12300 superpixels
+Time taken by extractSuperpixels: 214.452 seconds
+  - Time in growSuperpixel: 0.386663 seconds
+  - Time in calculateSuperpixelProperties: 18.9145 seconds
+  - Time in assignToNearestSuperpixel: 195.074 seconds
+Building superpixel graph...
+Created graph with 43912 edges
+Time taken by buildSuperpixelGraph: 1.06278 seconds
+Performing graph-based segmentation with k=50
+Created 140 segments
+Time taken by segmentGraph: 0.00872904 seconds
+Using k=50 with 140 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00838408 seconds
+Results saved as 'sar_segmented_omp_sample20.png'
+Time taken for segmentation: 215.558 seconds
+
+
+
+Processing inputs/sample21.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1920x1920
+Image preprocessed. Size: 1920x1920
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 17666 superpixels
+Time taken by extractSuperpixels: 133.655 seconds
+  - Time in growSuperpixel: 0.617132 seconds
+  - Time in calculateSuperpixelProperties: 27.4379 seconds
+  - Time in assignToNearestSuperpixel: 105.529 seconds
+Building superpixel graph...
+Created graph with 61674 edges
+Time taken by buildSuperpixelGraph: 1.15342 seconds
+Performing graph-based segmentation with k=50
+Created 242 segments
+Time taken by segmentGraph: 0.012209 seconds
+Using k=50 with 242 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00840233 seconds
+Results saved as 'sar_segmented_omp_sample21.png'
+Time taken for segmentation: 134.848 seconds
+
+
+
+Processing inputs/sample3.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1200x675
+Image preprocessed. Size: 1200x675
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 4158 superpixels
+Time taken by extractSuperpixels: 14.5942 seconds
+  - Time in growSuperpixel: 0.137845 seconds
+  - Time in calculateSuperpixelProperties: 6.41397 seconds
+  - Time in assignToNearestSuperpixel: 8.02598 seconds
+Building superpixel graph...
+Created graph with 15419 edges
+Time taken by buildSuperpixelGraph: 0.376308 seconds
+Performing graph-based segmentation with k=50
+Created 5 segments
+Time taken by segmentGraph: 0.00292892 seconds
+Using k=50 with 5 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00218425 seconds
+Results saved as 'sar_segmented_omp_sample3.png'
+Time taken for segmentation: 14.9838 seconds
+
+
+
+Processing inputs/sample4.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1200x675
+Image preprocessed. Size: 1200x675
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 3232 superpixels
+Time taken by extractSuperpixels: 9.0574 seconds
+  - Time in growSuperpixel: 0.14356 seconds
+  - Time in calculateSuperpixelProperties: 5.05384 seconds
+  - Time in assignToNearestSuperpixel: 3.84439 seconds
+Building superpixel graph...
+Created graph with 11304 edges
+Time taken by buildSuperpixelGraph: 0.399439 seconds
+Performing graph-based segmentation with k=50
+Created 41 segments
+Time taken by segmentGraph: 0.00262525 seconds
+Using k=50 with 41 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00248529 seconds
+Results saved as 'sar_segmented_omp_sample4.png'
+Time taken for segmentation: 9.47088 seconds
+
+
+
+Processing inputs/sample5.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1200x618
+Image preprocessed. Size: 1200x618
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 2928 superpixels
+Time taken by extractSuperpixels: 11.8379 seconds
+  - Time in growSuperpixel: 0.0971046 seconds
+  - Time in calculateSuperpixelProperties: 4.49711 seconds
+  - Time in assignToNearestSuperpixel: 7.2283 seconds
+Building superpixel graph...
+Created graph with 10021 edges
+Time taken by buildSuperpixelGraph: 0.298866 seconds
+Performing graph-based segmentation with k=50
+Created 39 segments
+Time taken by segmentGraph: 0.00212508 seconds
+Using k=50 with 39 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00205525 seconds
+Results saved as 'sar_segmented_omp_sample5.png'
+Time taken for segmentation: 12.1473 seconds
+
+
+
+Processing inputs/sample6.jpg
+Loading SAR image...
+Image loaded successfully. Size: 1280x822
+Image preprocessed. Size: 1280x822
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 3663 superpixels
+Time taken by extractSuperpixels: 10.0376 seconds
+  - Time in growSuperpixel: 0.17769 seconds
+  - Time in calculateSuperpixelProperties: 5.56345 seconds
+  - Time in assignToNearestSuperpixel: 4.2765 seconds
+Building superpixel graph...
+Created graph with 12849 edges
+Time taken by buildSuperpixelGraph: 0.430168 seconds
+Performing graph-based segmentation with k=50
+Created 58 segments
+Time taken by segmentGraph: 0.00280683 seconds
+Using k=50 with 58 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0027275 seconds
+Results saved as 'sar_segmented_omp_sample6.png'
+Time taken for segmentation: 10.4796 seconds
+
+
+
+Processing inputs/sample7.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 5533 superpixels
+Time taken by extractSuperpixels: 87.8825 seconds
+  - Time in growSuperpixel: 0.388065 seconds
+  - Time in calculateSuperpixelProperties: 8.45703 seconds
+  - Time in assignToNearestSuperpixel: 78.9641 seconds
+Building superpixel graph...
+Created graph with 21228 edges
+Time taken by buildSuperpixelGraph: 1.09523 seconds
+Performing graph-based segmentation with k=50
+Created 662 segments
+Time taken by segmentGraph: 0.00428746 seconds
+Using k=50 with 662 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00891379 seconds
+Results saved as 'sar_segmented_omp_sample7.png'
+Time taken for segmentation: 89.01 seconds
+
+
+
+Processing inputs/sample8.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1490
+Image preprocessed. Size: 2650x1490
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 16857 superpixels
+Time taken by extractSuperpixels: 288.078 seconds
+  - Time in growSuperpixel: 0.502412 seconds
+  - Time in calculateSuperpixelProperties: 25.9918 seconds
+  - Time in assignToNearestSuperpixel: 261.503 seconds
+Building superpixel graph...
+Created graph with 64724 edges
+Time taken by buildSuperpixelGraph: 1.31978 seconds
+Performing graph-based segmentation with k=50
+Created 127 segments
+Time taken by segmentGraph: 0.0125595 seconds
+Using k=50 with 127 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.0094155 seconds
+Results saved as 'sar_segmented_omp_sample8.png'
+Time taken for segmentation: 289.449 seconds
+
+
+
+Processing inputs/sample9.jpg
+Loading SAR image...
+Image loaded successfully. Size: 2650x1491
+Image preprocessed. Size: 2650x1491
+OpenMP threads available: 128
+Starting SAR image segmentation with OpenMP...
+Extracting superpixels...
+Using 128 threads for parallel processing
+Created 5533 superpixels
+Time taken by extractSuperpixels: 87.9808 seconds
+  - Time in growSuperpixel: 0.431237 seconds
+  - Time in calculateSuperpixelProperties: 8.90847 seconds
+  - Time in assignToNearestSuperpixel: 78.5683 seconds
+Building superpixel graph...
+Created graph with 21228 edges
+Time taken by buildSuperpixelGraph: 1.08497 seconds
+Performing graph-based segmentation with k=50
+Created 662 segments
+Time taken by segmentGraph: 0.00427558 seconds
+Using k=50 with 662 segments
+Generating segmentation result...
+Time taken by generateSegmentationResult: 0.00892479 seconds
+Results saved as 'sar_segmented_omp_sample9.png'
+Time taken for segmentation: 89.0979 seconds
+
+
+
+
+

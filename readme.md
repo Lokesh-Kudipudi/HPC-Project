@@ -140,4 +140,4 @@ High entropy → more detailed/complex segmentation.
 
 ### Evalution Sheet
 
-(Google Sheet Link)[https://docs.google.com/spreadsheets/d/1SwYvWu2-6ZTNSZguZ7LxR_cQ_cC1RAzSuLoQ0ACM_14/edit?usp=sharing]
+[Google Sheet Link](https://docs.google.com/spreadsheets/d/1SwYvWu2-6ZTNSZguZ7LxR_cQ_cC1RAzSuLoQ0ACM_14/edit?usp=sharing)
