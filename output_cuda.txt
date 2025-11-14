@@ -43,13 +43,13 @@ Building superpixel graph...
 Created graph with 7216 edges
 Time taken by buildSuperpixelGraph: 0.978653 seconds
 Performing graph-based segmentation with k=50
-
 Created 286 segments
 Time taken by segmentGraph: 0.00484019 seconds
 Using k=50 with 286 segments
 Generating segmentation result...
 Time taken by generateSegmentationResult: 0.0298381 seconds
 Time taken for segmentation: 2.88445 seconds
+
 Loading SAR image...
 Image loaded successfully. Size: 1200x675
 Image preprocessed. Size: 1200x675
